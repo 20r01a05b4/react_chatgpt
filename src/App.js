@@ -18,7 +18,7 @@ const App = () => {
     setLoading(true);
     openai.completions.create({
       model: "text-davinci-003",
-      prompt: prompt + "\n" + conversationHistory.join("\n"), // New code: Add the conversation history to the prompt.
+      prompt: prompt + "\n" + conversationHistory.join("\n"), 
       temperature: 0.5,
       max_tokens: 4000,
     }).then((res) => {
