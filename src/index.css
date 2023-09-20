@@ -5,9 +5,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#outer{
+  background-color: black;
+  border-radius:3px;
+  display: grid;
+  grid-template-columns: 1;
+  padding: 10px 60px 60px 60px;
+}
+#form{
+  background-color: gray;
+  padding:30px 30px 10px 30px;
+}
+#prompt{
+  background-color:lightgrey;
+  margin-right:0px;
+  min-width: 1100px;
+  min-height: 100px;
+  font-size: 23px;
+  color:black;
+}
+#generate{
+  width:120px;
+  height:50px;
+  background-color: darkcyan;
+  font-size: 22px;
+  color:black;
+}
+/*prompt box and response box */
+.prompt{
+  min-width: 1100px;
+  min-height: 70px;
+  font-size: 23px;
+ background-color: lightslategray;
+ color:black;
+}
+
+.response{
+  min-width: 1100px;
+  min-height: 110px;
+  font-size: 18px;
+  background-color:darkgrey;
+  color:black;
+}
+
+/* answer background setting */
+#answer{
+  border:2px 2px 2px 2px solid  red;
+  
+}
+#head{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color:white;
+}
+/*spanning tags */
+.spa{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ white-space-collapse:collapse;
+ color:goldenrod;
+}
+/*line*/
+.line{
+  width:1100px;
+  background-color: white;
+}
+/* odd even color */
+#answer:nth-child(odd) {
+  background-color:teal; /* Odd box color */
+  border:5px solid red;
+}
+#answer:nth-child(even){
+  background-color:white;
+  border:5px solid green;
+}
+#answer{
+  margin-bottom: 60px;
 }
